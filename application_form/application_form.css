@@ -1,0 +1,43 @@
+#header{
+    position: relative;
+    background-color: #00F0BF;
+    height: 40px;
+}
+    
+h1 {
+    font-family: Lobster;
+    text-align: center;
+}
+
+form {
+    font-family: Verdana;
+}
+
+input {
+    font-family: Verdana;
+    color: #777;
+}
+
+textarea {
+    vertical-align: top;
+    width: 500px;
+    color: #777;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: Verdana;
+    font-size: 0.8em;
+}
+
+#inputs {
+    width: 200px;
+    clear: both;
+}
