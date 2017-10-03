@@ -1,2 +1,2 @@
 # Web-Projects
-For practice
+For practices on codecademy
