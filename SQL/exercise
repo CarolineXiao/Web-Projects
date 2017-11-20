@@ -1,1 +1,36 @@
-CREATE TABLE groceries
+CREATE TABLE cart (id INTEGER PRIMARY KEY, type TEXT, name TEXT, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO cart VALUES (1, "fruits", "Bananas", 4, 2);
+INSERT INTO cart VALUES (2, "snacks", "Peanut Butter", 1, 2);
+INSERT INTO cart VALUES (3, "snacks", "Dark Chocolate Bars", 2, 5);
+INSERT INTO cart VALUES (4, "snacks", "Ice Cream", 5, 7);
+INSERT INTO cart (type, name, quantity, aisle) VALUES ("snacks", "Pringles", 9, 5);
+
+SELECT name FROM cart;
+SELECT * FROM cart WHERE quantity > 2 ORDER BY quantity; 
+
+SELECT aisle, SUM(quantity) AS total_quantity FROM cart GROUP BY aisle;
+SELECT * FROM cart WHERE quantity > 2 AND aisle < 2;
+
+SELECT * FROM cart WHERE type IN ("fruits", "snacks");
+
+SELECT COUNT(*) FROM cart WHERE
+  quantity >= 5
+  AND aisle < 3;
+  
+SELECT name, quantity,
+  CASE
+    WHEN quantity > 2 THEN "right"
+    WHEN quantity > 4 THEN "too much"
+    ELSE "too little"
+  END as "comments"
+FROM cart;
+
+SELECT COUNT(*)
+  CASE
+    WHEN quantity > 2 THEN "right"
+    WHEN quantity > 4 THEN "too much"
+    ELSE "too little"
+  END as "comments"
+FROM cart
+GROUP BY comments;
