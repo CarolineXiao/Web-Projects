@@ -78,3 +78,58 @@ ON customers.id = orders.customer_id
 GROUP BY customers.name
 ORDER BY total_price DESC;
 
+
+
+/* Dynamic Documnets (Changing rows with UPDATE nad DELETE) */
+
+CREATE table documents (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    content TEXT,
+    author TEXT);
+    
+INSERT INTO documents (author, title, content)
+    VALUES ("Puff T.M. Dragon", "Fancy Stuff", "Ceiling wax, dragon wings, etc.");
+INSERT INTO documents (author, title, content)
+    VALUES ("Puff T.M. Dragon", "Living Things", "They're located in the left ear, you know.");
+INSERT INTO documents (author, title, content)
+    VALUES ("Jackie Paper", "Pirate Recipes", "Cherry pie, apple pie, blueberry pie.");
+INSERT INTO documents (author, title, content)
+    VALUES ("Jackie Paper", "Boat Supplies", "Rudder - guitar. Main mast - bed post.");
+INSERT INTO documents (author, title, content)
+    VALUES ("Jackie Paper", "Things I'm Afraid Of", "Talking to my parents, the sea, giant pirates, heights.");
+
+SELECT * FROM documents;
+
+UPDATE documents SET author = "Jackie Draper" WHERE author = "Jackie Paper";
+SELECT * FROM documents;
+
+DELETE FROM documents WHERE title = "Things I'm Afraid Of";
+SELECT * FROM documents;
+
+
+
+/* Clothing alteration (Alerting tables after creation) */
+
+CREATE TABLE clothes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    type TEXT,
+    design TEXT);
+    
+INSERT INTO clothes (type, design)
+    VALUES ("dress", "pink polka dots");
+INSERT INTO clothes (type, design)
+    VALUES ("pants", "rainbow tie-dye");
+INSERT INTO clothes (type, design)
+    VALUES ("blazer", "black sequin");
+    
+    
+ALTER TABLE clothes ADD price INTEGER;
+SELECT * FROM clothes;
+
+UPDATE clothes SET price = 10 WHERE id = 1;
+UPDATE clothes SET price = 20 WHERE id = 2;
+UPDATE clothes SET price = 30 WHERE id = 3;
+
+INSERT INTO clothes (type, design, price) 
+    VALUES ("skirts", "black mini", 260);
