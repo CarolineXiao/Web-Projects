@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns="urn:mpeg:dash:schema:mpd:2011"
+	 xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011"
+	 mediaPresentationDuration="PT190.423S"
+	 minBufferTime="PT2.00S"
+	 type="static"
+	 profiles="urn:mpeg:dash:profile:isoff-main:2011">
+	 <BaseURL></BaseURL>
+	 <Period start="PT0.00S" duration="PT190.423S">
+		 <BaseURL>USA_EN_UDR_MPEG_DASH/</BaseURL>
+		 <AdaptationSet mimeType="audio/mp4" codecs="mp4a.0x40" lang="en" subsegmentAlignment="true">
+			 <SegmentTemplate media="$RepresentationID$/seg_$Number$.m4s" initialization="$RepresentationID$/seg_init.mp4" duration="5" startNumber="0"/>
+			 <Representation id="audio-160Kbps" bandwidth="160000"/>
+		 </AdaptationSet>
+		 <AdaptationSet bitstreamSwitching="true" mimeType="video/mp4" codecs="avc1.4D4028" subsegmentAlignment="true">
+			 <SegmentTemplate media="$RepresentationID$/seg_$Number$.m4s" initialization="$RepresentationID$/seg_init.mp4" duration="5" startNumber="0"/>
+			 <Representation id="video-500Kbps" bandwidth="500000" width="640" height="360">
+			 </Representation>
+			 <Representation id="video-750Kbps" bandwidth="750000" width="852" height="480">
+			 </Representation>
+			 <Representation id="video-1500Kbps" bandwidth="1500000" width="1280" height="720">
+			 </Representation>
+			 <Representation id="video-2000Kbps" bandwidth="2000000" width="1920" height="1080">
+			 </Representation>
+		 </AdaptationSet>
+	 </Period>
+ </MPD>

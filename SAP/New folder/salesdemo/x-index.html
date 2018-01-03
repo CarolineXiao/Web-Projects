@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Demo</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom Styles -->
+    <!--link href="css/style.css" rel="stylesheet" type="text/css"-->
+    <!--link href="css/fonts/glyphicons-halflings-regular.ttf" type="text/css"-->
+    <!--link href="css/fonts/glyphicons-halflings-regular.eot"  type="text/css"-->
+    <!--llink href="css/fonts/glyphicons-halflings-regular.woff" type="text/css"-->
+    <!--llink href="css/fonts/glyphicons-halflings-regular.woff2"  type="text/css"-->
+    <!--llink href="css/fonts/glyphicons-halflings-regular.svg"  type="text/css"-->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/demo-cust.css">
+
+    <!-- Alert Driving Custom Icons Styles -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--script src="jQueryAssets/jquery-1.11.1.min.js" type="text/javascript"></script-->
+</head>
+<body>
+<div id="topHeader" style="border:none;">
+    <nav id="global">
+        <?php require '_inc/menu.html' ?>
+        <button class="navTrigger"><span>Menu</span></button>
+    </nav>
+    <header style="align-items:center;">
+        <div style="width:25%; margin:1rem 0;">
+            <img id="logo" src="img/Fleet-Defence-Logo.jpg"/>
+        </div>
+        <div style="width:65%;"><h1>Localized for 75 Countries and 125 Languages</h1></div>
+
+    </header>
+
+</div>
+
+<div id="main-content-land" class="container-fluid">
+
+    <div class="col3">
+        <div id="lang-box-na" class="lang-box" style="bottom:1vw; left:6vw; position:absolute; float:left;">
+            <button class="lang" id="lang-na-fr" onclick="window.location.href='index-start.html'"><p>French</p>
+            </button>
+            <button class="lang" id="lang-na-sp" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Spanish</p></button>
+            <button class="lang" id="lang-na-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+        <button id="na" class="blue-btn" style="bottom:1.2vw; left:15.5vw;"><p>North America</p></button>
+    </div>
+    <div class="col3">
+        <div id="lang-box-eu" class="lang-box" style="bottom:4vw; left:7vw; position:absolute; float:left;">
+            <button class="lang" id="lang-eu-gr" onclick="window.location.href='index-start.html'"><p>German</p>
+            </button>
+            <button class="lang" id="lang-eu-fr" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>French</p></button>
+            <button class="lang" id="lang-eu-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+        <button id="eu" class="blue-btn" style="bottom:4vw; left:16vw;"><p>Europe</p></button>
+    </div>
+
+    <div class="col3">
+        <div id="lang-box-as" class="lang-box" style="bottom:6vw; left:1.5vw; position:absolute; float:left;">
+            <button class="lang" id="lang-as-jp" onclick="window.location.href='index-start.html'"><p>Japanese</p>
+            </button>
+            <button class="lang" id="lang-as-ch" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Chinese</p></button>
+            <button class="lang" id="lang-as-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+        <button id="as" class="blue-btn" style="bottom:6.5vw; left:10vw;"><p>Asia</p></button>
+    </div>
+    <div class="col3">
+        <div id="lang-box-la" class="lang-box" style="bottom:15vw; left:17vw; position:absolute; float:left;">
+            <button class="lang" id="lang-la-sp" onclick="window.location.href='index-start.html'"><p>Spanish</p>
+            </button>
+            <button class="lang" id="lang-la-pg" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Portugese</p></button>
+            <button class="lang" id="lang-la-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+        <button id="la" class="blue-btn" style="bottom:15vw; left:26vw;"><p>Latin America</p></button>
+    </div>
+    <div class="col3">
+        <div id="lang-box-af" class="lang-box" style="bottom:15vw; left:7vw; position:absolute; float:left;">
+            <button class="lang" id="lang-af-fr" onclick="window.location.href='index-start.html'"><p>French</p>
+            </button>
+            <button class="lang" id="lang-fa-sp" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Spanish</p></button>
+            <button class="lang" id="lang-af-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+
+        <button id="af" class="blue-btn" style="bottom:15vw; left:16vw;"><p>Africa</p></button>
+    </div>
+
+    <div class="col3">
+        <div id="lang-box-me" class="lang-box" style="bottom:22.5vw; left:-8vw; position:absolute; float:left;">
+            <button class="lang" id="lang-me-ar" onclick="window.location.href='index-start.html'"><p>Arabic</p>
+            </button>
+            <button class="lang" id="lang-me-hn" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Hindi</p></button>
+            <button class="lang" id="lang-me-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+
+
+        <button id="me" class="blue-btn" style="bottom:23vw; left:0.5vw;"><p>Middle East</p></button>
+
+        <div id="lang-box-oc" class="lang-box" style="bottom:8.5vw; left:3vw; position:absolute; float:left;">
+            <button class="lang" id="lang-oc-fr" onclick="window.location.href='index-start.html'"><p>French</p>
+            </button>
+            <button class="lang" id="lang-oc-sp" style="padding-left:0 !important;"
+                    onclick="window.location.href='index-start.html'"><p>Spanish</p></button>
+            <button class="lang" id="lang-oc-en" onclick="window.location.href='index-start.html'"><p>English</p>
+            </button>
+        </div>
+        <button id="oc" class="blue-btn" style="bottom:9vw; left:12vw;"><p>Oceana</p></button>
+    </div>
+
+</div>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+<script>
+    $('button.navTrigger').on('click', function () {
+        if ($('nav').hasClass("expanedeView")) {
+            $('nav#global').removeClass('expanedeView');
+            $('#logo').removeClass('logoHigh');
+        } else {
+            $('nav#global').addClass('expanedeView');
+            $('#logo').addClass('logoHigh');
+        }
+    });
+</script>
+
+<script>
+
+
+    $('#na.blue-btn').on('click', function () {
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'visible');
+        $('#na').removeClass('blue-btn');
+        $('#na').addClass('act-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+    });
+
+    $('#la.blue-btn').on('click', function () {
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-la').css('visibility', 'visible');
+        $('#la').removeClass('blue-btn');
+        $('#la').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+    });
+
+    $('#af.blue-btn').on('click', function () {
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'visible');
+        $('#lang-box').removeClass('lang-box');
+        $('#lang-box').addClass('lang-box-act');
+        $('#af').removeClass('blue-btn');
+        $('#af').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').addClass('gray-btn');
+    });
+
+    $('#eu.blue-btn').on('click', function () {
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-eu').css('visibility', 'visible');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').addClass('gray-btn');
+    });
+
+    $('#me.blue-btn').on('click', function () {
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'visible');
+        $('#me').removeClass('blue-btn');
+        $('#me').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').addClass('gray-btn');
+    });
+
+    $('#oc.blue-btn').on('click', function () {
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'visible');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+        $('#as').removeClass('blue-btn');
+        $('#as').removeClass('act-btn');
+        $('#as').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').addClass('gray-btn');
+    });
+
+    $('#as.blue-btn').on('click', function () {
+        $('#lang-box-la').css('visibility', 'hidden');
+        $('#lang-box-af').css('visibility', 'hidden');
+        $('#lang-box-me').css('visibility', 'hidden');
+        $('#lang-box-oc').css('visibility', 'hidden');
+        $('#lang-box-eu').css('visibility', 'hidden');
+        $('#lang-box-na').css('visibility', 'hidden');
+        $('#lang-box-as').css('visibility', 'visible');
+        $('#as').removeClass('blue-btn');
+        $('#as').addClass('act-btn');
+        $('#na').removeClass('blue-btn');
+        $('#na').removeClass('act-btn');
+        $('#na').addClass('gray-btn');
+        $('#af').removeClass('blue-btn');
+        $('#af').removeClass('act-btn');
+        $('#af').addClass('gray-btn');
+        $('#oc').removeClass('blue-btn');
+        $('#oc').removeClass('act-btn');
+        $('#oc').addClass('gray-btn');
+        $('#me').removeClass('blue-btn');
+        $('#me').removeClass('act-btn');
+        $('#me').addClass('gray-btn');
+        $('#eu').removeClass('blue-btn');
+        $('#eu').removeClass('act-btn');
+        $('#eu').addClass('gray-btn');
+        $('#la').removeClass('act-btn');
+        $('#la').removeClass('blue-btn');
+        $('#la').addClass('gray-btn');
+    });
+
+</script>
+
+
+</body>
+</html>
