@@ -1,0 +1,10 @@
+<virtualHost *:80>
+    DocumentRoot "C:\wamp\www\example_spa\public"
+    ServerName localhost.example_spa
+	
+    <Directory "C:\wamp\www\example_spa\public">
+        AllowOverride AuthConfig FileInfo Indexes Limit Options
+        order Deny, Allow
+        Allow from all
+    </Directory>
+</virtualHost>

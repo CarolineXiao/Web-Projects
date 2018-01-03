@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang='en' >
+    
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<link href="vendor/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+<div id="application">
+    <nav class="navbar navbar-static-top bg-danger" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">AlertDriving Blog</a>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    
+    <div class="btn-wrapper">
+        <button type="button" class="btn btn-default btn-add-new">Add New</button>
+    </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Posts</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td class="col-md-12">
+                            <div class="post">This is the content of the blog post</div>
+                            <div class="user">developer@alertdriving.com at 2014-10-14 13:53:35</div>
+                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-12">
+                            <div class="post">This is the content of the blog post</div>
+                            <div class="user">developer@alertdriving.com at 2014-10-14 13:53:35</div>
+                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+					<tr>
+                        <td class="col-md-12">
+                            <div class="post">This is the content of the blog post</div>
+                            <div class="user">developer@alertdriving.com at 2014-10-14 13:53:35</div>
+                            <button type="button" class="btn btn-default">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+define([
+    'jquery',
+    'underscore',
+    'Class/Base'
+], function ($, _, Base) {
+    'use strict';
+
+    /**
+     * RestClient
+     * @desc The purpose of this class is to manage the server calls. 
+     * All information about the api to the server will be stored here.
+     */
+    return Base.extend(function RestClient(options) {
+        /** Constructor */
+    }, {
+        /**
+         * Fetch list of posts
+         * @param {function} callback
+         * @param {object} context
+         */
+        fetchPosts: function (callback, context) {
+            var FETCH_POSTS_URL = '/api';
+            $.get(FETCH_POSTS_URL, function(data) {
+                callback.call(context, data);
+            });
+        },
+                
+        deletePost: function() {
+    
+        }
+
+    });
+});

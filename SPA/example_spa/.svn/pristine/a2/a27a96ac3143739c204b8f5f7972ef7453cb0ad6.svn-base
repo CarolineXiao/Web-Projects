@@ -1,0 +1,38 @@
+define([
+    'marionette'
+], function (Marionette) {
+    'use strict';
+
+    /**
+     * Application Routing Interface.
+     */
+    return Marionette.AppRouter.extend({
+        routes: {
+            '': 'posts',
+            'add': 'add',
+            'edit/:id': 'edit'
+        },
+
+        /**
+         * @description Route for posts page (default)
+         */
+        posts: function () {
+
+        },
+
+        /**
+         * @description Route for Add post page
+         */
+        add: function () {
+            alert('Goes to Add post page');
+        },
+                
+        /**
+         * @description Route for Edit post page
+         */
+        edit: function (id) {
+            alert('Goes to Edit post page for post id: ' + id);
+        }
+
+    });
+});
