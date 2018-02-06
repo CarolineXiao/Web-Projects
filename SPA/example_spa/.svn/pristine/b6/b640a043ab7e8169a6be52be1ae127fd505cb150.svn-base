@@ -1,6 +1,0 @@
-config.folder=
-file.reference.sandbox-example_spa=.
-file.reference.sandbox-spa_exercise=.
-files.encoding=UTF-8
-site.root.folder=${file.reference.sandbox-example_spa}
-test.folder=

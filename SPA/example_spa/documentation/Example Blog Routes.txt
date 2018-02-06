@@ -1,7 +1,0 @@
-Routes
-
-blank 		- Posts page (default)
-'#add' 		- Add a post
-'#edit:1'	- Edit post 1
-
-
