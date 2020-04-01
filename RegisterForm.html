@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Command + / -->
+	<title> Register </title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form action="https://google.ca" method="get">
+		<div>
+			<label for="firstname">First Name:</label>
+			<input id="firstname" type="text" placeholder="John"></input>
+			<label for="lastname">Last Name:</label>
+			<input id="lastname" type="text" placeholder="Smith"></input>
+		</div>
+		<div>
+			<label>Male</label>
+			<input type="radio" name="sex">
+			<label>Female</label>
+			<input type="radio" name="sex">
+			<label>Other</label>
+			<input type="radio" name="sex">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email" placeholder="your email">
+			<label>Password:</label>
+			<input type="password" name="password" pattern=".{8,20}" required title="Password must be between 8-20 characters">
+		</div>
+		<div>
+			<label for="birthday">Birthday:</label>
+			<select name="month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+			</select>
+
+			<select name="day">
+				<option>Day</option>
+				<option>08</option>
+				<option>16</option>
+				<option>22</option>
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option>2019</option>
+				<option>2020</option>
+				<option>2021</option>
+			</select>
+		</div>
+		<div>
+			I agree to the terms and conditions
+			<input type="checkbox" name="checkbox">
+		</div>
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
